@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           ILIAS Auto-Downloader
 // @namespace      https://ddoo.me/ilias-auto-downloader
-// @version        1.1
+// @version        1.2
 // @description    Automated Tampermonkey script for ILIAS. Automatically and locally downloads published files from individual or all ILIAS courses as a ZIP archive – including a local history to download only new or updated files.
 // @description:de Automatisiertes Tampermonkey-Skript für ILIAS. Lädt veröffentlichte Dateien aus einzelnen oder allen ILIAS-Kursen automatisch und lokal als ZIP-Archiv herunter – inklusive lokalem Verlauf für nur neue oder geänderte Dateien.
 // @author         ewebfly
@@ -9,7 +9,8 @@
 // @supportURL     https://github.com/ewebfly/Ilias-auto-downloader/issues
 // @match          *://*.ilias.*/*
 // @match          *://ilias.*/*
-// @match          *://*/ilias.php*
+// @match          *://*/ilias*
+// @exclude        *://*/ilias-*
 // @icon           https://www.google.com/s2/favicons?sz=64&domain=ilias.de
 // @require        https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js
 // @updateURL      https://raw.githubusercontent.com/ewebfly/Ilias-auto-downloader/main/ilias-auto-downloader.js
